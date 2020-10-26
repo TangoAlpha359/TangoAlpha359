@@ -3,23 +3,15 @@
 ## I'm a husband, economist, technologist, and generally a curious adventurer-type.
 
 - 🌱 Learning GraphQl, Tensorflow, pretty much everything else for data science work.
-
-- 🔭 Astronomy/Space Enthusiast.
-
-- 🛸 Into High Energy Physics and Astrophysics.
-
+- 🔭 Astronomy, Physics, Space enthusiast.
 - 📈 Economist by training.
-
 - 📊 Data Science on the weekends.
-
+- 🌐 Human languages include English, Japanese, some Spanish.
 
 ### Connect with me:
 [<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-
-###
-(people) Languages - English, Japanese, Spanish
 
 ### Languages and Tools:
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
