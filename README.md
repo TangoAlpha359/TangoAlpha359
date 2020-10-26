@@ -4,11 +4,6 @@
 
 - 🌱 Learning GraphQl, Tensorflow, pretty much everything else for data science work.
 
-- 💻 Do HTML,
-
-
-, Javascript, React and a few others.
-
 - 🔭 Astronomy/Space Enthusiast.
 
 - 🛸 Into High Energy Physics and Astrophysics.
@@ -16,8 +11,6 @@
 - 📈 Economist by training.
 
 - 📊 Data Science on the weekends.
-
-
 
 
 ### Connect with me:
