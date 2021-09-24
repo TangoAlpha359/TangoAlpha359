@@ -1,7 +1,7 @@
 ### Hi there, I'm Andrew. 👋
 
 ## I'm a husband, economist, technologist, and generally a curious adventurer-type.
-- 🌱 Learning GraphQl, Tensorflow, pretty much everything else for data science work.
+- 🌱 Learning pretty much everything else for data science work.
 - 🔭 Astronomy, Physics, Space enthusiast.
 - 📈 Economist by training.
 - 📊 Data Science on the weekends.
