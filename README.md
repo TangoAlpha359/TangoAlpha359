@@ -3,7 +3,7 @@
 ## I'm a husband, economist, technologist, and generally a curious adventurer-type.
 - 🌱 Learning pretty much everything else for data science work.
 - 🔭 Astronomy, Physics, Space enthusiast.
-- 📈 Economist by training.
+- 📈 Economist by training — Behavourial, institutional, and international political economy.
 - 📊 Data Science on the weekends.
 - 🌐 Human languages include English, Japanese, some Spanish.
 
