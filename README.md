@@ -4,7 +4,7 @@
 - 🌱 Learning pretty much everything else for data science work.
 - 🔭 Astronomy, Physics, Space enthusiast.
 - 📈 Economist by training — Behavourial, institutional, and international political economy.
-- 📊 Data Science on the weekends.
+- 📊 Data Science 24/7.
 - 🌐 Human languages include English, Japanese, some Spanish.
 
 ### Connect with me:
