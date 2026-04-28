@@ -1,0 +1,346 @@
+:root {
+  color: #fff8df;
+  background: #080816;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.game-canvas {
+  position: fixed;
+  inset: 0;
+  background: #080816;
+  perspective: 1400px;
+}
+
+.game-canvas canvas {
+  display: block;
+  image-rendering: pixelated;
+  transform: rotateX(16deg) rotateY(-10deg) translateZ(0);
+  transform-origin: center center;
+  transform-style: preserve-3d;
+}
+
+.hud {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  pointer-events: none;
+}
+
+.brand-pill {
+  min-width: 210px;
+  padding: 14px 24px 14px 52px;
+  border-radius: 999px 0 0 999px;
+  background: #ff9c39;
+  color: #080816;
+  font-weight: 900;
+  box-shadow: inset 32px 0 0 #b98cff;
+}
+
+.hud-panel {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px 14px;
+  padding: 12px 16px;
+  border-radius: 0 20px 20px 0;
+  background: rgba(8, 8, 22, 0.8);
+  border: 2px solid #73d6ff;
+  color: #fff8df;
+  backdrop-filter: blur(8px);
+}
+
+.hud-panel span {
+  color: #ff9c39;
+}
+
+.hud-panel strong {
+  color: #fff8df;
+}
+
+.ship-nav {
+  position: fixed;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.ship-nav button,
+.turbolift-grid button {
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px 0 999px 0;
+  padding: 10px 16px;
+  background: #ff9c39;
+  color: #080816;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: inset 24px 0 0 #b98cff;
+}
+
+.ship-nav button:nth-child(2),
+.turbolift-grid button:nth-child(2) {
+  background: #b98cff;
+  box-shadow: inset 24px 0 0 #73d6ff;
+}
+
+.ship-nav button:nth-child(3),
+.turbolift-grid button:nth-child(3) {
+  background: #73d6ff;
+  box-shadow: inset 24px 0 0 #ff9c39;
+}
+
+.ship-nav button:nth-child(4),
+.turbolift-grid button:nth-child(4) {
+  background: #06d6a0;
+  box-shadow: inset 24px 0 0 #ef476f;
+}
+
+.ship-nav button:hover,
+.ship-nav button.active,
+.turbolift-grid button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at center, rgba(115, 214, 255, 0.14), transparent 34%),
+    rgba(8, 8, 22, 0.76);
+  backdrop-filter: blur(3px);
+}
+
+.lcars-modal {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 720px);
+  width: min(860px, 100%);
+  max-height: min(720px, calc(100vh - 48px));
+  overflow: hidden;
+  border: 4px solid #080816;
+  border-radius: 34px 0 34px 0;
+  background: #15122c;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+}
+
+.lcars-rail {
+  background:
+    linear-gradient(#ff9c39 0 24%, transparent 24% 30%, #b98cff 30% 55%, transparent 55% 62%, #73d6ff 62% 100%);
+  border-right: 12px solid #080816;
+}
+
+.turbolift-panel {
+  width: min(760px, 100%);
+  padding: 28px;
+  border: 4px solid #080816;
+  border-radius: 34px 0 34px 0;
+  background:
+    linear-gradient(90deg, #ff9c39 0 54px, transparent 54px),
+    #15122c;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+}
+
+.turbolift-header {
+  padding-left: 74px;
+  margin-bottom: 22px;
+}
+
+.turbolift-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-left: 74px;
+  margin-bottom: 24px;
+}
+
+.modal-content {
+  padding: 28px;
+  overflow: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #ff9c39;
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #fff8df;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+p {
+  line-height: 1.7;
+  color: #f7eecf;
+}
+
+.close-button {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: #ef476f;
+  color: #080816;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  filter: brightness(1.08);
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.35fr) 1fr;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.data-grid span,
+.data-grid strong,
+.contact-stack a,
+.project-card {
+  padding: 12px 14px;
+  background: #080816;
+  border-left: 12px solid #ff9c39;
+}
+
+.data-grid span {
+  color: #73d6ff;
+  font-weight: 800;
+}
+
+.data-grid strong {
+  color: #fff8df;
+  border-left-color: #b98cff;
+}
+
+.project-list {
+  display: grid;
+  gap: 12px;
+}
+
+.project-card {
+  border-left-color: #73d6ff;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #ff9c39;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+
+.contact-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.contact-stack a {
+  color: #fff8df;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.contact-stack a:hover {
+  color: #73d6ff;
+}
+
+@media (max-width: 680px) {
+  .hud {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .brand-pill,
+  .hud-panel {
+    width: fit-content;
+  }
+
+  .lcars-modal {
+    grid-template-columns: 28px minmax(0, 1fr);
+    border-radius: 22px 0 22px 0;
+  }
+
+  .modal-header,
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-header {
+    flex-direction: column;
+  }
+
+  .ship-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ship-nav button {
+    min-height: 42px;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .turbolift-header,
+  .turbolift-grid {
+    padding-left: 44px;
+  }
+
+  .turbolift-grid {
+    grid-template-columns: 1fr;
+  }
+}
